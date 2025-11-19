@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>US Economic Indicators</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-links">
+            <a href="index.html">States and Metropolitan areas</a>
+            <a href="page2.html" class="active">Inflation VS GDP, $/hr, Interest rate</a>
+            <a href="page3.html">GDP by Consumption vs Productivity</a>
+            <a href="page4.html">GDP grows with inflation?</a>
+            <a href="page5.html">$/hr vs Inflation</a>
+            <a href="page6.html">Interest rate vs Inflation</a>
+            <a href="page7.html">Correlation of Indicators</a>
+        </div>
+    </nav>
+
+    <!-- removes padding so the viz fills the space -->
+    <div class="main-content full-page">
+
+        <!-- four new text links start here -->
+        <a href="page3.html" class="info-link" id="link-to-page3">GDP Details →</a>
+        <a href="page4.html" class="info-link" id="link-to-page4">Inflation/GDP Details →</a>
+        <a href="page5.html" class="info-link" id="link-to-page5">Hourly Earnings Details →</a>
+        <a href="page6.html" class="info-link" id="link-to-page6">Interest Rate Details →</a>
+        <!-- links end here -->
+
+        <!-- tableau dashboard embed code starts here -->
+        <div class='tableauPlaceholder tableau-container' id='viz1763476493077' style='position: relative'><noscript><a href='#'><img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ta&#47;TableauVis_17634764746470&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='TableauVis_17634764746470&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ta&#47;TableauVis_17634764746470&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>
+        
+        <script type='text/javascript'>
+            var divElement = document.getElementById('viz1763476493077');
+            var vizElement = divElement.getElementsByTagName('object')[0];
+            vizElement.style.width = '100%';
+            vizElement.style.height = (divElement.offsetHeight) + 'px';
+            var scriptElement = document.createElement('script');
+            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+            vizElement.parentNode.insertBefore(scriptElement, vizElement);
+        </script>
+        <!-- tableau dashboard embed code ends here -->
+
+    </div>
+
+    <!-- other script tags -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

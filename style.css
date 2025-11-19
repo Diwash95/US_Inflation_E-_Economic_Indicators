@@ -1,0 +1,119 @@
+/* styles the overall page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #333; /* sets a default text color */
+}
+
+/* styles the navigation bar */
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* styles the links in the navigation bar */
+.navbar a {
+    float: left;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* styles the link when hovered over */
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* styles the currently active page link */
+.navbar a.active {
+    background-color: #007BFF;
+    color: white;
+}
+
+/* styles the main content area */
+.main-content {
+    padding: 60px 20px 20px 20px;
+}
+
+/* styles full-page content */
+.main-content.full-page {
+    padding: 0;
+    position: relative; /* positions elements inside */
+}
+
+/* styles the container for chartjs charts */
+.chart-container {
+    width: 80%;
+    max-width: 900px;
+    margin: auto;
+}
+
+/* styles the container for the tableau dashboard */
+.tableau-container {
+    width: 100%;
+    height: calc(100vh - 48px);
+}
+
+/* styles the vizhub iframe container */
+.viz-container {
+    width: 100%;
+    height: calc(100vh - 48px);
+}
+
+.viz-container iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* base style for the new text links */
+.quadrant-link {
+    position: absolute;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+
+.quadrant-link:hover {
+    background-color: rgba(0, 123, 255, 0.8);
+}
+
+/* specific positions for each link */
+
+/* Top-Left Quadrant */
+#link-top-left {
+    top: 60px;
+    left: 20px;
+}
+
+/* Top-Right Quadrant */
+#link-top-right {
+    top: 60px;
+    right: 20px;
+}
+
+/* Bottom-Left Quadrant */
+#link-bottom-left {
+    bottom: 60px;
+    left: 20px;
+}
+
+/* Bottom-Right Quadrant */
+#link-bottom-right {
+    bottom: 60px;
+    right: 20px;
+}
